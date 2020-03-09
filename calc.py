@@ -28,6 +28,21 @@ class AgeCalculator():
 		Seconds1=float(hour1[2])
 		Seconds2=int(Seconds1)
 		print("Seconds remaining :",60-Seconds2)
+		print("\nTime Passed:")
+		print("Month Passed :",12-abs(month)-1)
+		if month==30:
+			print("Day passed :",30-abs(day))
+		elif month==31:
+			print("Day passed:",31-abs(day))
+		elif month==29:
+			print("Day passed :",29-abs(day))
+		else:
+			print("Day passed :",28-abs(day))
+
+		#print("Day passed :",abs(day))
+		print("Hour passed :",abs(int(hour1[0])))
+		print("Minutes passed :",abs(int(hour1[1])))
+		print("Seconds passed:",Seconds2)
 #name=input("\nEnter Your Name :")
 dob=input("Enter your Age in YYYY MM DD format Ex. 2001 05 16 :\n")
 date=dob.split()
